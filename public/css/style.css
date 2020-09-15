@@ -7,9 +7,8 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-  --ff-primary: "Source Sans Pro", sans-serif;
-  --ff-secondary: "Source Code Pro", monospace;
-
+  --ff-primary: "Baloo Thambi 2", cursive;
+  --ff-secondary: "Michroma", sans-serif;
   --ff-reg: 300;
   --fw-bold: 900;
 
@@ -36,6 +35,10 @@
 }
 
 /* General Styles */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--clr-light);
@@ -251,6 +254,10 @@ header {
   border-radius: 50%;
 }
 
+.intro__img--portfolio-item {
+  box-shadow: var(--bs);
+}
+
 .section__subtitle--intro {
   display: inline-block;
 }
@@ -273,6 +280,13 @@ header {
     position: relative;
     z-index: 2;
     border-radius: 50%;
+  }
+
+  .intro__img--portfolio-item {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
   }
 
   .section__subtitle--intro {
@@ -442,4 +456,18 @@ header {
 
 .social-list__link {
   padding: 0.5em;
+}
+
+/* Individual portfolio item styles */
+
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
